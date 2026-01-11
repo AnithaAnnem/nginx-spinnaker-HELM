@@ -1,0 +1,14 @@
+app:
+  name: nginx
+  image: nginx
+  tag: dev
+  replicas: 1
+  port: 80
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi
